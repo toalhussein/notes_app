@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:notes_app/views/widgets/custom_notes_item.dart';
 
+import '../constans.dart';
 import 'widgets/add_note_sheet.dart';
 import 'widgets/notes_view_body.dart';
 
@@ -13,7 +14,7 @@ class NotesView extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         shape: CircleBorder(),
-        backgroundColor: Color(0xff53d1c4),
+        backgroundColor: KPrimaryColor,
         onPressed: () {
           showModalBottomSheet(
               context: context,
