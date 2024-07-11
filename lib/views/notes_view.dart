@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:notes_app/views/widgets/custom_notes_item.dart';
 
 import '../constans.dart';
 import 'widgets/add_note_sheet.dart';
