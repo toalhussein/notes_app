@@ -7,11 +7,12 @@ import 'custom_notes_item.dart';
 
 class NotesListView extends StatelessWidget {
   const NotesListView({super.key});
-  final data = const [];
+
+
   @override
   Widget build(BuildContext context) {
-    List<NoteModel> notes = BlocProvider.of<NotesCubitCubit>(context).notes!;
-    return BlocBuilder<NotesCubitCubit, NotesCubitState>(
+    List<NoteModel> notes = BlocProvider.of<NotesCubit>(context).notes!;
+    return BlocBuilder<NotesCubit, NotesCubitState>(
       builder: (context, state) {
         return Padding(
           padding: const EdgeInsets.symmetric(vertical: 12),
